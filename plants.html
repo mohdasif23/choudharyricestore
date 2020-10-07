@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Choudhary Rice Store</title>
+    <link href="cssjs/bootstrap.min.css" rel="stylesheet" />
+    <script src="cssjs/jquery.min.js"></script>
+    <script src="cssjs/popper.min.js"></script>
+    <script src="cssjs/bootstrap.min.js"></script>
+    <script src="plants.js"></script>
+    <script src="cssjs/picturefill.min.js"></script>
+    <script src="dist/js/lightgallery-all.min.js"></script>
+    <script src="lib/jquery.mousewheel.min.js"></script>
+    <link href="dist/css/lightgallery.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-image: url('b.jpg');
+        }
+        .demo-gallery > ul {
+            margin-bottom: 0;
+        }
+
+            .demo-gallery > ul > li {
+                float: left;
+                margin-bottom: 15px;
+                margin-right: 0;
+                width: 200px;
+            }
+
+                .demo-gallery > ul > li a {
+                    border: 3px solid #FFF;
+                    border-radius: 3px;
+                    display: block;
+                    overflow: hidden;
+                    position: relative;
+                    float: left;
+                }
+
+                    .demo-gallery > ul > li a > img {
+                        -webkit-transition: -webkit-transform 0.15s ease 0s;
+                        -moz-transition: -moz-transform 0.15s ease 0s;
+                        -o-transition: -o-transform 0.15s ease 0s;
+                        transition: transform 0.15s ease 0s;
+                        -webkit-transform: scale3d(1, 1, 1);
+                        transform: scale3d(1, 1, 1);
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    .demo-gallery > ul > li a:hover > img {
+                        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                        transform: scale3d(1.1, 1.1, 1.1);
+                    }
+
+                    .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+                        opacity: 1;
+                    }
+
+                    .demo-gallery > ul > li a .demo-gallery-poster {
+                        background-color: rgba(0, 0, 0, 0.1);
+                        bottom: 0;
+                        left: 0;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        -webkit-transition: background-color 0.15s ease 0s;
+                        -o-transition: background-color 0.15s ease 0s;
+                        transition: background-color 0.15s ease 0s;
+                    }
+
+                        .demo-gallery > ul > li a .demo-gallery-poster > img {
+                            left: 50%;
+                            margin-left: -10px;
+                            margin-top: -10px;
+                            opacity: 0;
+                            position: absolute;
+                            top: 50%;
+                            -webkit-transition: opacity 0.3s ease 0s;
+                            -o-transition: opacity 0.3s ease 0s;
+                            transition: opacity 0.3s ease 0s;
+                        }
+
+                    .demo-gallery > ul > li a:hover .demo-gallery-poster {
+                        background-color: rgba(0, 0, 0, 0.5);
+                    }
+
+        .demo-gallery .justified-gallery > a > img {
+            -webkit-transition: -webkit-transform 0.15s ease 0s;
+            -moz-transition: -moz-transform 0.15s ease 0s;
+            -o-transition: -o-transform 0.15s ease 0s;
+            transition: transform 0.15s ease 0s;
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+            height: 100%;
+            width: 100%;
+        }
+
+        .demo-gallery .justified-gallery > a:hover > img {
+            -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+        }
+
+        .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+            opacity: 1;
+        }
+
+        .demo-gallery .justified-gallery > a .demo-gallery-poster {
+            background-color: rgba(0, 0, 0, 0.1);
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            -webkit-transition: background-color 0.15s ease 0s;
+            -o-transition: background-color 0.15s ease 0s;
+            transition: background-color 0.15s ease 0s;
+        }
+
+            .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+                left: 50%;
+                margin-left: -10px;
+                margin-top: -10px;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                -webkit-transition: opacity 0.3s ease 0s;
+                -o-transition: opacity 0.3s ease 0s;
+                transition: opacity 0.3s ease 0s;
+            }
+
+        .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .demo-gallery .video .demo-gallery-poster img {
+            height: 48px;
+            margin-left: -24px;
+            margin-top: -24px;
+            opacity: 0.8;
+            width: 48px;
+        }
+
+        .demo-gallery.dark > ul > li a {
+            border: 3px solid #04070a;
+        }
+
+        .home .demo-gallery {
+            padding-bottom: 80px;
+        }
+    </style>
+</head>
+<body class="home">
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <b> <a class="nav-link" href="Index.html" style="color:wheat;">Home</a></b>
+                    </li>
+                    <li class="nav-item">
+                        <b>  <a class="nav-link" href="plants.html" style="color: wheat;">Gallery</a></b>
+                    </li>
+                    <li class="nav-item">
+                        <b> <a class="nav-link" href="pricelist.html" style="color: wheat;">Pricing</a></b>
+                    </li>
+                    <li class="nav-item">
+                        <b>   <a class="nav-link" href="ContactUs.html" style="color: wheat;">Contact Us</a></b>
+                    </li>
+                    <!--<li class="nav-item">
+                        <b> <a class="nav-link" href="AboutUs.html" style="color: wheat;">About Us</a></b>
+                    </li>-->
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <h2> <b style="color: white; height: 40px; color: wheat;"> Choudhary Rice Store</b></h2>
+                </ul>
+                <!--<form class="form-inline my-2 my-lg-0"> </form>-->
+            </div>
+        </nav>
+
+
+        <div class="text-success text-center font-weight-bold" style="background-color:wheat;">
+
+
+            <!--<marquee behavior="scroll" direction="up" scrollamount="1"><h6><b> A M Green Landscape</b></h4></marquee>-->
+            <marquee behavior="scroll" direction="right" scrollamount="12" style="color:red"><h7><b> Choudhary Rice Store</b></h7></marquee>
+            <marquee behavior="scroll" direction="left" scrollamount="20" style="color:white"><h7><b> Choudhary Rice Store</b></h7></marquee>
+            <marquee behavior="scroll" direction="right" scrollamount="30" style="color:green"><h7><b> Choudhary Rice Store</b></h7></marquee>
+        </div>
+
+        <div class="demo-gallery">
+            <ul id="lightgallery" class="list-unstyled row">
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/1.jpg 800" data-src="img/1.jpg" data-sub-html="
+                    <h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/1.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/2.jpg 800" data-src="img/2.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/2.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/3.jpg 800" data-src="img/3.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/3.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/4.jpg 800" data-src="img/4.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/4.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/5.jpg 800" data-src="img/5.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/5.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/6.jpg 800" data-src="img/6.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/6.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/7.jpg 800" data-src="img/7.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/7.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/7.jpg 800" data-src="img/8.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/8.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/7.jpg 800" data-src="img/9.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/9.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/7.jpg 800" data-src="img/10.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/10.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/7.jpg 800" data-src="img/11.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/11.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/7.jpg 800" data-src="img/12.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/12.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/7.jpg 800" data-src="img/13.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/13.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/7.jpg 800" data-src="img/14.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/14.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/7.jpg 800" data-src="img/15.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/15.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/7.jpg 800" data-src="img/16.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/16.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/7.jpg 800" data-src="img/17.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/17.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/7.jpg 800" data-src="img/18.jpg" data-sub-html="
+                    <h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                    <a href="">
+                        <img class="img-responsive" src="img/18.jpg" style="height: 275px; width: 308px;">
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
